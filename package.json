@@ -1,0 +1,34 @@
+{
+  "name": "mcp-helm-tools",
+  "version": "1.0.0",
+  "description": "MCP server for Helm with vals and validate tools",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "node --watch build/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "helm",
+    "vals",
+    "kubernetes",
+    "secrets",
+    "validation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
